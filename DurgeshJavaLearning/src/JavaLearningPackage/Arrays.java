@@ -5,7 +5,8 @@ public class Arrays {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		SingleDimensionalArrays();
+		//SingleDimensionalArrays();
+		MultiDimensionalArrays();
 		
 		
 	}
@@ -49,6 +50,54 @@ public class Arrays {
 		{
 			System.out.println(j);
 		}
+		
+	}
+	
+	static void MultiDimensionalArrays()
+	{
+		
+				//To create an array in a single statement, 
+				//first declare the type of the array, followed by the name of the array, and then the values of the array enclosed in curly braces, separated by commas.
+
+				int numberm[][] = {{1,2},{3,4},{5,6,1001}};
+				String namem[][] = {{"Duregesh"}, {"Singh", "Sengar"}};
+				
+				//Declare and Initialize an Array
+				
+				int numberm1[][];
+				numberm1 = new int[][] {{1,2},{3}};
+				
+				
+				//Declare with length and Initialize an Array
+				
+				int numberm3[][] = new int[2][3];
+				
+				numberm3[0][0] = 1;
+				numberm3[1][1] = 2;
+				numberm3[1][2] = 3;
+				
+				
+				String[][] strm = new String[3][1];
+				
+				
+				//Print array value directly using index number
+				System.out.println(numberm[0][0]);
+				
+				System.out.println("Length"+numberm.length);
+				
+				//Print array value using for loop
+				for(int im=0; im<numberm.length;im++)
+				{
+					for(int jm=0; jm<numberm[im].length;jm++)
+					System.out.println("["+im+"]"+"["+jm+"]"+numberm[im][jm]);
+				}
+				
+				//Print array values using for each loop
+				for(String[] km : namem)
+				{
+					for(String lm : km)
+					System.out.println(lm);
+				}
 		
 	}
 
