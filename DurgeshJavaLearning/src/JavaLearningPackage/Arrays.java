@@ -6,7 +6,9 @@ public class Arrays {
 		// TODO Auto-generated method stub
 		
 		//SingleDimensionalArrays();
-		MultiDimensionalArrays();
+		//MultiDimensionalArrays();
+		CopyArrayUsingAssignmentOperator();
+		
 		
 		
 	}
@@ -100,5 +102,29 @@ public class Arrays {
 				}
 		
 	}
+	
+	static void CopyArrayUsingAssignmentOperator()
+	{
+		int numberc[] = {1,2,3,4,5,6,1001};
+		
+		//Copy Array using '=' Assignment Operator
+		int numberc1[] = numberc;
+		
+		for(int c : numberc1)
+		{
+			System.out.println("Values of Copied single Dimestional Array 'numberc1': "+c);
+		}
+		
+		int numberc2[][] = {{11,12},{13,14},{15,16}};
+		int numberc3[][]= numberc2;
+		
+		for(int d[]:numberc3)
+			for(int e:d)
+			{
+				System.out.printf("\n Value of Copied Multi DimestionalArray 'numberc3': "+ e);
+			}
+		
+	}
+	
 
 }
