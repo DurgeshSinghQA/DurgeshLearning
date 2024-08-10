@@ -7,8 +7,8 @@ public class Arrays {
 		
 		//SingleDimensionalArrays();
 		//MultiDimensionalArrays();
-		CopyArrayUsingAssignmentOperator();
-		
+		//CopyArrayUsingAssignmentOperator();
+		CopyArrayUsingForLoop();
 		
 		
 	}
@@ -124,6 +124,37 @@ public class Arrays {
 				System.out.printf("\n Value of Copied Multi DimestionalArray 'numberc3': "+ e);
 			}
 		
+	}
+	
+	static void CopyArrayUsingForLoop()
+	{
+		int [] numberc4 = {21, 23, 24, 25};
+		int [] number5 = new int[numberc4.length];
+		
+		for(int e=0; e < numberc4.length; e++)
+		{
+			number5[e]= numberc4[e] ;
+			
+			//System.out.println(number5[e]);
+			
+		}
+		
+		int [][] numberc6 = {{31,32},{33,34},{35,36}};
+		
+		int [] [] numberc7 = new int[numberc6.length][];
+		
+		for(int f = 0; f<numberc6.length; f++)
+		{
+			
+			for(int g = 0; g<numberc6[f].length; g++)
+			{
+				numberc7[f] = new int[numberc6[f].length];
+											
+				numberc7[f][g] = numberc6[f][g];
+				System.out.println("Array numberc7 values at "+f+g+": "+numberc7[f][g]);
+			}
+		}
+	
 	}
 	
 
