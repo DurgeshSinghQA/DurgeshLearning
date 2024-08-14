@@ -1,6 +1,8 @@
 package JavaLearningPackage;
 
-public class Arrays {
+import java.util.Arrays;
+
+public class ArraysDur {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -8,7 +10,9 @@ public class Arrays {
 		//SingleDimensionalArrays();
 		//MultiDimensionalArrays();
 		//CopyArrayUsingAssignmentOperator();
-		CopyArrayUsingForLoop();
+		//CopyArrayUsingForLoop();
+		
+		CopyArrayUsingArrayCopyMethod();
 		
 		
 	}
@@ -155,6 +159,35 @@ public class Arrays {
 			}
 		}
 	
+	}
+	
+		
+	static void CopyArrayUsingArrayCopyMethod()
+	{
+		//Copy single dimesional using arraycopy Method
+		int src[] = {1,2,3,4};
+		
+		int dest[];
+		dest = new int[src.length+1];
+		
+		System.arraycopy(src, 3, dest, 1, 1);
+		
+		System.out.println( Arrays.toString(dest)); // Arrays.toString is used to convert single dimesion array to string
+		
+		//Copy multi dimesional using arraycopy Method
+		
+		int src1[][] = {{10,11,12},{13,14,15}};
+		
+		int dest1[][] = new int[src1.length][];
+		
+		for(int ac = 0; ac<src1.length; ac++)
+		{
+			dest1[ac] = new int[src1[ac].length];
+			
+			System.arraycopy(src1[ac], 0, dest1[ac], 0, dest1[ac].length); 
+		}
+		
+		System.out.println(Arrays.deepToString(dest1)); // Arrays.deepToString is used to convert 2d array to string
 	}
 	
 
