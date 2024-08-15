@@ -14,7 +14,9 @@ public class ArraysDur {
 		
 		//CopyArrayUsingArrayCopyMethod();
 		
-		PrintFirst3LetterOfWord();
+		//PrintFirst3LetterOfWord();
+		
+		CopyArrayUsingCopyOfRange();
 		
 	}
 	
@@ -213,5 +215,19 @@ public class ArraysDur {
 		}
 			
 	}
-
+	
+	static void CopyArrayUsingCopyOfRange()
+	{
+		int cor [] = {1,2,3,4};
+		
+		//Copy complete array
+		int cord[] = Arrays.copyOfRange(cor, 0, cor.length);
+		
+		System.out.println(Arrays.toString(cord));
+		
+		//Copy array in range. 3 is not included		
+		int cord1[] = Arrays.copyOfRange(cor, 1, 3);
+		
+		System.out.println(Arrays.toString(cord1));
+	}
 }
