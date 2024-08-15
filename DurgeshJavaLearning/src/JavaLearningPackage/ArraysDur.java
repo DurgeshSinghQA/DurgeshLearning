@@ -16,7 +16,9 @@ public class ArraysDur {
 		
 		//PrintFirst3LetterOfWord();
 		
-		CopyArrayUsingCopyOfRange();
+		//CopyArrayUsingCopyOfRange();
+		
+		ConcatenateTwoArraysUsingArraycopy();
 		
 	}
 	
@@ -217,6 +219,7 @@ public class ArraysDur {
 	}
 	
 	static void CopyArrayUsingCopyOfRange()
+
 	{
 		int cor [] = {1,2,3,4};
 		
@@ -230,4 +233,26 @@ public class ArraysDur {
 		
 		System.out.println(Arrays.toString(cord1));
 	}
+
+	static void ConcatenateTwoArraysUsingArraycopy()
+	{
+		int ctau[] = {1,2,3};
+		int ctau1[] = {4,5,6};
+		
+		int ctaul = ctau.length;
+		int ctaul1 = ctau1.length;
+		
+		int concat[] = new int[ctaul+ctaul1];
+		
+		System.arraycopy(ctau, 0, concat, 0, ctaul);
+		System.arraycopy(ctau1, 0, concat, ctaul, ctaul1);
+		
+		System.out.println(Arrays.toString(concat));
+		
+	}
+
+
+
+
+
 }
