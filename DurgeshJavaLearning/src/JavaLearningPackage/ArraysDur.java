@@ -12,8 +12,9 @@ public class ArraysDur {
 		//CopyArrayUsingAssignmentOperator();
 		//CopyArrayUsingForLoop();
 		
-		CopyArrayUsingArrayCopyMethod();
+		//CopyArrayUsingArrayCopyMethod();
 		
+		PrintFirst3LetterOfWord();
 		
 	}
 	
@@ -190,5 +191,27 @@ public class ArraysDur {
 		System.out.println(Arrays.deepToString(dest1)); // Arrays.deepToString is used to convert 2d array to string
 	}
 	
+	static void PrintFirst3LetterOfWord()
+	{
+		String allDayName[] = {"Su", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+		
+		for(int dn=0; dn<allDayName.length; dn++)
+		{
+			
+			String day = allDayName[dn];
+			
+			if(day.length()>3)
+			{
+				System.out.println("Day Name: "+day.subSequence(0, 3));	
+			}
+			
+			else
+			{
+				System.out.println("Day Name: "+day);
+			}
+			
+		}
+			
+	}
 
 }
