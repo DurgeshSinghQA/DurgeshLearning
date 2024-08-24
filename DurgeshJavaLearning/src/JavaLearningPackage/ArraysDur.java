@@ -18,7 +18,9 @@ public class ArraysDur {
 		
 		//CopyArrayUsingCopyOfRange();
 		
-		ConcatenateTwoArraysUsingArraycopy();
+		//ConcatenateTwoArraysUsingArraycopy();
+		
+		ConcatenateTwoArraysUsingForLoop();
 		
 	}
 	
@@ -251,7 +253,29 @@ public class ArraysDur {
 		
 	}
 
+	static void ConcatenateTwoArraysUsingForLoop()
+	{
+		int a [] = {1,2,3};
+		int b[]= {4,5,6};
+		
+		int c[] = new int[a.length+b.length];
+		
+		int index=0;
+		
+		for(int d:a)
+		{
+			c[index++]=d;
+		}
+		
+		for(int e:b)
+		{
+			c[index++]=e;
+		}
+		
+		System.out.println(Arrays.toString(c));
+	}
 
+	
 
 
 
