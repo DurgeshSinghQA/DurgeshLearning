@@ -5,6 +5,7 @@ public class PyramidPatterns {
 	public static void main(String[] args) {
 		
 		reversepyramid();
+		
 	}
 	
 	public static void reversepyramid()
