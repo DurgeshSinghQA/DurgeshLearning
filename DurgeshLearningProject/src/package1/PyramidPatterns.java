@@ -5,7 +5,6 @@ public class PyramidPatterns {
 	public static void main(String[] args) {
 		
 		reversepyramid();
-		
 	}
 	
 	public static void reversepyramid()
@@ -15,7 +14,7 @@ public class PyramidPatterns {
 			System.out.println();
 			for(int j=i;j<10;j++)
 			{
-				System.out.print("*"); 
+				System.out.print("*");
 			}
 		}
 	}
