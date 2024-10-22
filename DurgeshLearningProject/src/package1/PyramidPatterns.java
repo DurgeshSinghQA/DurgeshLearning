@@ -41,10 +41,5 @@ public class PyramidPatterns {
 			System.out.println();
 		}
 	}
-	
-	public static void StartLeftPyramid()
-	{
-		
-	}
 
 }
